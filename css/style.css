@@ -1,0 +1,57 @@
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+  }
+
+  .wrapper {
+    font-family: 'Monospace';
+    color: #fff;
+    display: inline-flex;
+  }
+
+  .wrapper li {
+    list-style: none;
+  }
+
+  .wrapper .static-text {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+    display:inline;
+    float:left;
+  }
+
+  .wrapper .dynamic-text {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dynamic-text span {
+    position: relative
+  }
+
+  .dynamic-text span::after{
+    content: '';
+    position: absolute;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #fff;
+    animation: typing 4s steps(200) 1s both;
+  }
+
+  @keyframes typing {
+    100%{
+      left: 100%;
+      margin: 0 -35px 0 35px
+    }
+    
+  }
