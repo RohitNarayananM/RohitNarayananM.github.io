@@ -2,6 +2,10 @@
     <head>
         <title>Working on terminal theme</title>
         <link rel="stylesheet" href="/css/terminal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
     </head>
     <body>
         <div class="wind">
@@ -12,7 +16,42 @@
         </div>
         <div class="outer">
             <div class="blurred"></div>
-            <div class="clear"></div>
+            <div class="clear">
+                rohit@r0h1t.me
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
         </div>
+        <script>
+            function maximize () {
+                document.getElementsByClassName("outer")[0].style.height = "100%";
+                document.getElementsByClassName("outer")[0].style.width = "100%";
+                document.getElementsByClassName("wind")[0].style.width = "100%";
+                document.getElementsByClassName("wind")[0].style.top = "0";
+                document.getElementsByClassName("dot yellow")[0].onclick=minimize;
+            }
+            function minimize () {
+                document.getElementsByClassName("outer")[0].style.height = "95%";
+                document.getElementsByClassName("outer")[0].style.width = "97%";
+                document.getElementsByClassName("outer")[0].style.display = "block";
+                document.getElementsByClassName("wind")[0].style.width = "96.9%";
+                document.getElementsByClassName("wind")[0].style.top = "2.5%";
+                document.getElementsByClassName("dot yellow")[0].onclick=maximize;
+            }
+            document.getElementsByClassName("dot red")[0].onclick = function() {
+                document.getElementsByClassName("outer")[0].style.display = "none";
+                document.getElementsByClassName("wind")[0].style.display = "none";
+            }
+            document.getElementsByClassName("dot yellow")[0].onclick = maximize;
+            document.getElementsByClassName("dot green")[0].onclick = function() {
+                document.getElementsByClassName("outer")[0].style.display = "none";
+                document.getElementsByClassName("wind")[0].style.top = "95%";
+                document.getElementsByClassName("wind")[0].style.width = "15%";
+                document.getElementsByClassName("dot")[0].style.display = "none";
+                document.getElementsByClassName("dot")[1].style.display = "none";
+                document.getElementsByClassName("dot")[2].style.display = "none";
+                document.getElementsByClassName("term-title")[0].style.left= "42%";
+            
+            }
+        </script>
     </body>
 </html>

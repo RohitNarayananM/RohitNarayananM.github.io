@@ -73,7 +73,7 @@
     width: 100%;
     background: #000;
     border-left: 2px solid #fff;
-    animation: typing 4s steps(200) 1s both;
+    animation: typing 3s steps(200,end) 1s both;
   }
 
   @keyframes typing {

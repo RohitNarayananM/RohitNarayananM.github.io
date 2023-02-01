@@ -24,6 +24,7 @@ body {
 .wind {
   display: flex;
   position: fixed;
+  font-family: 'Sofia Sans', sans-serif;
   top: 2.5%;
   width:96.9%;
   height: 3%;
@@ -40,6 +41,7 @@ body {
   background: url(/terminal/bg.png);
   background-size: cover;
   background-position: center;
+  border-radius: 10px 10px 0px 0px;
   filter: blur(10px);
   filter: brightness(0.5);
   align-items: center;
@@ -53,6 +55,7 @@ body {
 .clear {
   display: flex;
   position: fixed;
+  font-family: 'Sofia Sans', sans-serif;
   top: 5.5%;
   left: 2%;
   width: 100%;
