@@ -1,14 +1,20 @@
   body {
     display: flex;
-    justify-content: center;
     background: #000;
   }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   
-  .navbar li {
+  .navbar-custom li {
     float: left;
   }
 
-  .navbar a {
+  .navbar-custom a {
     display: block;
     padding: 15px;
     background-color: #000;
@@ -18,12 +24,12 @@
     text-decoration: none;
   }
 
-  .navbar a:hover {
+  .navbar-custom a:hover {
     background-color: #fff;
     color: #000;
   }
 
-  .navbar ul {
+  .navbar-custom ul {
     position: fixed;
     top: 0;
     overflow: hidden;
