@@ -1,5 +1,14 @@
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6TEV86QF7"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L6TEV86QF7');
+        </script>
         <title>Working on terminal theme</title>
         <link rel="stylesheet" href="/css/terminal.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +36,7 @@
                 document.getElementsByClassName("outer")[0].style.width = "100%";
                 document.getElementsByClassName("wind")[0].style.width = "100%";
                 document.getElementsByClassName("wind")[0].style.top = "0";
+                document.getElementsByClassName("wind")[0].style.borderRadius = "0";
                 document.getElementsByClassName("dot yellow")[0].onclick=minimize;
             }
             function minimize () {
@@ -35,6 +45,10 @@
                 document.getElementsByClassName("outer")[0].style.display = "block";
                 document.getElementsByClassName("wind")[0].style.width = "96.9%";
                 document.getElementsByClassName("wind")[0].style.top = "2.5%";
+                document.getElementsByClassName("term-title")[0].style.left= "48%";
+                document.getElementsByClassName("dot")[0].style.left="94%"
+                document.getElementsByClassName("dot")[0].style.margin = "0rem 1% 0 0;";
+                document.getElementsByClassName("wind")[0].style.borderRadius = "10px 10px 0px 0px";
                 document.getElementsByClassName("dot yellow")[0].onclick=maximize;
             }
             document.getElementsByClassName("dot red")[0].onclick = function() {
@@ -46,11 +60,10 @@
                 document.getElementsByClassName("outer")[0].style.display = "none";
                 document.getElementsByClassName("wind")[0].style.top = "95%";
                 document.getElementsByClassName("wind")[0].style.width = "15%";
-                document.getElementsByClassName("dot")[0].style.display = "none";
-                document.getElementsByClassName("dot")[1].style.display = "none";
-                document.getElementsByClassName("dot")[2].style.display = "none";
+                document.getElementsByClassName("dot")[0].style.left="90%"
+                document.getElementsByClassName("dot")[0].style.margin = "0";
                 document.getElementsByClassName("term-title")[0].style.left= "42%";
-            
+                document.getElementsByClassName("dot green")[0].onclick=minimize;
             }
         </script>
     </body>
