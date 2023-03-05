@@ -1,5 +1,4 @@
   body {
-    display: flex;
     background: #000;
   }
 
@@ -7,14 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     width: 100%;
   }
-  
-  .navbar-custom li {
-    float: left;
+
+  .navbar {
+    margin-top: 0%;
+    background-color: #000;
   }
 
-  .navbar-custom a {
+  .navbar a {
     display: block;
     padding: 15px;
     background-color: #000;
@@ -24,12 +25,12 @@
     text-decoration: none;
   }
 
-  .navbar-custom a:hover {
+  .navbar a:hover {
     background-color: #fff;
     color: #000;
   }
 
-  .navbar-custom ul {
+  .navbar ul {
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -79,8 +80,40 @@
     width: 100%;
     background: #000;
     border-left: 2px solid #fff;
-    animation: typing 3s steps(200,end) 1s both;
+    animation: typing 1.5s steps(19,end) 0.1s both;
   }
+
+.profile {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Monospace';
+  color: #fff;
+  display: inline-flex;
+  max-height: 1%;
+  }
+
+#profile {
+  height: 8%;
+  width: 8%;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #fff;
+}
+
+.card {
+  background-color: #1f1f1f;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.card:hover{
+  border: 1px solid aqua;
+  box-shadow: 10px aqua;
+  margin: auto;
+  color: aqua;
+}
 
   @keyframes typing {
     100%{
