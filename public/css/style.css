@@ -1,5 +1,6 @@
   body {
     background: #000;
+    color: #fff;
   }
 
   .center {
@@ -170,4 +171,13 @@ h1 {
 
 button:hover{
   box-shadow: 10px 10px 1px aqua;
+}
+
+.card-img-top{
+  margin: 10px;
+  width: 95%;
+}
+
+.col-card{
+  margin-top: 10px;
 }
