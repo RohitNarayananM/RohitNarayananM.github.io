@@ -1,183 +1,81 @@
-  body {
-    background: #000;
-    color: #fff;
-  }
-
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .bg-dark {
-    background-color: #000!important;
-  }
-
-  .navbar{
-    padding: 0% 1%;
-  }
-
-  .navbar a{
-    color: #fff;
-  }
-
-  .nav-item{
-    padding: 0% 10%;
-    top: 0;
-  }
-
-  .navbar-nav{
-    padding: 0% 10%;
-    top : 0;
-  }
-
-  .navbar-brand{
-    padding: 0% 1%;
-  }
-
-  .nav-item:hover{
-    color: #000;
-    background-color: #fff;
-  }
-
-  .navbar-brand:hover{
-    color: #000;
-    background-color: #fff;
-  }
-
-  .wrapper {
-    justify-content: center;
-    align-items: center;
-    font-family: 'Monospace';
-    color: #fff;
-    display: flex;
-    margin: 0 auto;
-  }
-
-  .wrapper li {
-    list-style: none;
-  }
-
-  .wrapper .static-text {
-    font-size: 200%;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    margin-right: 1rem;
-    display:inline;
-    float:left;
-  }
-
-  .wrapper .dynamic-text {
-    font-size: 200%;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .dynamic-text span {
-    position: relative
-  }
-
-  .dynamic-text span::after{
-    content: '';
-    position: absolute;
-    left:0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    border-left: 2px solid #fff;
-    animation: typing 1.5s steps(19,end) 0.1s both;
-  }
-
-.profile {
-  justify-content: center;
-  align-items: center;
-  font-family: 'Monospace';
-  color: #fff;
-  display: inline-flex;
-  max-height: 1%;
-  }
-
-#profile {
-  height: 8%;
-  width: 8%;
-  border-radius: 50%;
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Proza Libre', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: #fff;
+.navbar {
+  background-color: #212529;
+  margin-bottom: 20px;
 }
 
-.card {
-  background-color: #1f1f1f;
-  color: #fff;
-  margin: 0 auto;
+.navbar-brand {
+  margin-left: 20px;
 }
 
-.card:hover{
-  border: 1px solid aqua;
-  margin: auto;
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  margin-left: 15px;
+  transition: letter-spacing 0.3s;
 }
 
-  @keyframes typing {
-    100%{
-      left: 100%;
-      margin: 0 -35px 0 35px
-    }
-    
-  }
+.navbar-dark .navbar-nav .nav-link:hover {
+  letter-spacing: 1.5px;
+}
 
-@media (max-width: 768px) {
-  .wrapper .static-text {
-    font-size: 150%;
-    font-weight: 500;
-  }
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff;
+}
 
-  .wrapper .dynamic-text {
-    font-size: 150%;
-    font-weight: 500;
-  }
+.profile-image {
+  width: 300px;
+  height: auto;
+  transition: transform 0.3s;
+}
 
-  #profile {
-    height: 20%;
-    width: 20%;
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(108%) contrast(106%);
+}
+
+.description .animated-text {
+  animation: none;
+}
+
+.description {
+  width: 18ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+      width: 0
+  }
+}
+  
+@keyframes blink {
+  50% {
+      border-color: transparent
   }
 }
 
-@media (max-width: 576px) {
-  .wrapper .static-text {
-    font-size: 100%;
-    font-weight: 350;
+@keyframes blink-caret {
+
+  from,
+  to {
+      border-color: transparent;
   }
 
-  .wrapper .dynamic-text {
-    font-size: 100%;
-    font-weight: 350;
+  50% {
+      border-color: #ffffff;
   }
-
-  #profile {
-    height: 20%;
-    width: 20%;
-  }
-}
-
-.btn-primary {
-  background-color: aqua!important;
-  border-color: aqua!important;
-  color: #000!important;
-}
-
-button:hover{
-  box-shadow: 10px 10px 1px aqua;
-}
-
-.card-img-top{
-  margin: 10px;
-  width: 95%;
-}
-
-.col-card{
-  margin-top: 10px;
 }

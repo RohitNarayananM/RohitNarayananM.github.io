@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6TEV86QF7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-L6TEV86QF7');
+        gtag('config', 'G-L6TEV86QF7');
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/projects.css">
     <title>Projects</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <a class="navbar-brand" href="/">Lu513n</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#">Lu513n</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" class="filter-white">
+                            <path d="M21 13v10h-6v-6h-6v6h-6v-10h-3l12-12 12 12h-3zm-1-5.907v-5.093h-3v2.093l3 3z" />
+                        </svg> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
+                    <a class="nav-link" href="/gallery"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" class="filter-white">
+                            <path
+                                d="M9 12c0-.552.448-1 1.001-1s.999.448.999 1-.446 1-.999 1-1.001-.448-1.001-1zm6.2 0l-1.7 2.6-1.3-1.6-3.2 4h10l-3.8-5zm8.8-5v14h-20v-3h-4v-15h21v4h3zm-20 9v-9h15v-2h-17v11h2zm18-7h-16v10h16v-10z" />
+                        </svg> Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/gallery">Gallery</a>
+                    <a class="nav-link" href="/projects"><i class="fas fa-project-diagram"></i> Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                    <a class="nav-link" href="/blog"><i class="fas fa-blog"></i> Blog</a>
                 </li>
             </ul>
         </div>
@@ -49,65 +62,79 @@
             <div class="col-12" style="text-align: center">
                 <h1>Projects</h1>
             </div>
-            <div class="col-12">
+            <div class="mt-2 col-12">
                 <h3>Front End projects</h3>
             </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-6 col-sm-12 col-card">
-                        <div class="card">
-                            <img src="/public/editor.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Image Editor</h5>
-                            <p class="card-text">A Simple Image Gallery and Image Editor using html and javascript</p>
-                            <a href="/FSD/projects/gallery/" class="btn btn-primary">Check it out!</a>
+                        <div class="mt-4 flip">
+                            <div class="front" style="background-image: url(/public/editor.png)">
+                                <h1 class="text-shadow">Editor</hi>
+                            </div>
+                            <div class="back">
+                                <h2>Image Editor</h2>
+                                <p>A Simple Image Gallery and Image Editor using html and javascript
+                                    <a href="/FSD/projects/gallery/" class="mt-4 btn btn-primary">Check it out!</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6 col-sm-12 col-card">
-                        <div class="card">
-                            <img src="/public/tictactoe.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Tic Tac Toe</h5>
-                            <p class="card-text">A Tic Tac Toe Clone to play with another player or computer using html and javascript</p>
-                            <a href="/FSD/projects/tictactoe/" class="btn btn-primary">Check it out!</a>
+                        <div class="mt-4 flip">
+                            <div class="front" style="background-image: url(/public/tictactoe.png)">
+                                <h1 class="text-shadow">Tic Tac Toe</hi>
+                            </div>
+                            <div class="back">
+                                <h2>Tic Tac Toe</h2>
+                                <p>A Tic Tac Toe Clone to play with another player or computer using html and javascript
+                                    <a href="/FSD/projects/tictactoe/" class="mt-4 btn btn-primary">Check it out!</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6 col-sm-12 col-card">
-                        <div class="card">
-                            <img src="/public/wordle.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Wordle</h5>
-                            <p class="card-text">A Wordle Clone made using html and javascript where you can guess 5 letter words</p>
-                            <a href="/FSD/projects/wordle/" class="btn btn-primary">Check it out!</a>
+                        <div class="mt-4 flip">
+                            <div class="front" style="background-image: url(/public/wordle.png)">
+                                <h1 class="text-shadow">Wordle</hi>
+                            </div>
+                            <div class="back">
+                                <h2>Wordle</h2>
+                                <p>A Wordle Clone made using html and javascript where you can guess 5 letter words
+                                    <a href="/FSD/projects/wordle/" class="mt-4 btn btn-primary">Check it out!</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-6 col-sm-12 col-card">
-                        <div class="card">
-                            <img src="/public/terminal.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Terminal</h5>
-                            <p class="card-text">A simple terminal clone made using html and javascript</p>
-                            <a href="/terminal" class="btn btn-primary">Check it out!</a>
+                        <div class="mt-4 flip">
+                            <div class="front" style="background-image: url(/public/terminal.png)">
+                                <h1 class="text-shadow">Terminal</hi>
+                            </div>
+                            <div class="back">
+                                <h2>Terminal</h2>
+                                <p>A simple terminal clone made using html and javascript
+                                    <a href="/terminal" class="mt-4 btn btn-primary">Check it out!</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="mt-2 col-12">
                 <h3>AI Projects</h3>
             </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-6 col-sm-12 col-card">
-                        <div class="card">
-                            <img src="https://github.com/RohitNarayananM/Handwritten_Digit_Recognition/raw/main/content/result.jfif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Handwritten Digit Recognition</h5>
-                            <p class="card-text">An ML Model that can predict handwritten digits</p>
-                            <a href="https://github.com/RohitNarayananM/Handwritten_Digit_Recognition" class="btn btn-primary">Check it out!</a>
+                        <div class="flip mt-4">
+                            <div class="front"
+                                style="background-image: url(https://github.com/RohitNarayananM/Handwritten_Digit_Recognition/raw/main/content/result.jfif)">
+                                <h1 class="text-shadow" style="color:#000">AI</hi>
+                            </div>
+                            <div class="back">
+                                <h2>Handwritten Digit Recognition</h2>
+                                <p>An ML Model that can predict handwritten digits<a href="https://github.com/RohitNarayananM/Handwritten_Digit_Recognition" class="mt-4 btn btn-primary">Check it out!</a></p>
                             </div>
                         </div>
                     </div>
@@ -115,7 +142,12 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
