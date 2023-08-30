@@ -6,18 +6,19 @@ body {
   padding: 0;
 }
 
-.navbar {
-  background-color: #212529;
-  margin-bottom: 20px;
+b{
+  color:#ff5a5a;
 }
 
-.navbar-brand {
-  margin-left: 20px;
+.navbar {
+  background-color: #000000;
+  margin-bottom: 20px;
+  padding-left: 50px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
-  margin-left: 15px;
+  padding-left: 320px;
   transition: letter-spacing 0.3s;
 }
 
@@ -30,30 +31,37 @@ body {
 }
 
 .profile-image {
-  width: 300px;
+  width: 350px;
   height: auto;
   transition: transform 0.3s;
-}
-
-.profile-image:hover {
-  transform: scale(1.1);
 }
 
 .filter-white {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(108%) contrast(106%);
 }
 
-.description .animated-text {
-  animation: none;
-}
-
 .description {
   width: 18ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
   font-size: 2em;
+}
+
+.description .animated-text {
+  border-right: 3px solid;
+  animation: blink .5s step-end infinite alternate;
+}
+
+.current {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff5a5a;
+}
+
+.name a{
+  color: #ff5a5a;
+  text-decoration: none;
+  transition: letter-spacing 0.3s;
 }
 
 @keyframes typing {
