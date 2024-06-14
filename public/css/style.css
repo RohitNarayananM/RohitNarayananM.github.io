@@ -1,13 +1,13 @@
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: 'Proza Libre', sans-serif;
+  font-family: "Proza Libre", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-b{
-  color:#ff5a5a;
+b {
+  color: #ff5a5a;
 }
 
 .navbar {
@@ -26,8 +26,12 @@ b{
   letter-spacing: 1.5px;
 }
 
-.navbar-dark .navbar-toggler-icon {
-  background-color: #ffffff;
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .profile-image {
@@ -37,7 +41,8 @@ b{
 }
 
 .filter-white {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg) brightness(108%) contrast(106%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(280deg)
+    brightness(108%) contrast(106%);
 }
 
 .description {
@@ -49,7 +54,7 @@ b{
 
 .description .animated-text {
   border-right: 3px solid;
-  animation: blink .5s step-end infinite alternate;
+  animation: blink 0.5s step-end infinite alternate;
 }
 
 .current {
@@ -58,7 +63,7 @@ b{
   text-decoration-color: #ff5a5a;
 }
 
-.name a{
+.name a {
   color: #ff5a5a;
   text-decoration: none;
   transition: letter-spacing 0.3s;
@@ -66,24 +71,23 @@ b{
 
 @keyframes typing {
   from {
-      width: 0
+    width: 0;
   }
 }
-  
+
 @keyframes blink {
   50% {
-      border-color: transparent
+    border-color: transparent;
   }
 }
 
 @keyframes blink-caret {
-
   from,
   to {
-      border-color: transparent;
+    border-color: transparent;
   }
 
   50% {
-      border-color: #ffffff;
+    border-color: #ffffff;
   }
 }
