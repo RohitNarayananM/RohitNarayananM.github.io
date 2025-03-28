@@ -17,22 +17,22 @@ h1 {
 
 .btn-primary {
   border: #ff5a5a solid 1px;
-  background-color:#ff5a5a;
+  background-color: #ff5a5a;
   color: #000;
 }
 
 .btn-primary:hover {
   border: #ff5a5a solid 1px;
-  background-color:#313131;
+  background-color: #313131;
   color: #ff5a5a;
   box-shadow: 0 0 5px 2px #ff5a5a;
   text-shadow: 0 0 5px #ff5a5a;
 }
 
+/* Flip card animation */
 .flip {
   text-align: center;
   position: relative;
-  font-family: "Roboto Mono";
   > .front,
   > .back {
     display: block;
@@ -101,6 +101,7 @@ h1 {
   }
 }
 
+/* Custom text shadow that can't be easily replicated with Tailwind */
 .text-shadow {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
     3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),

@@ -45,18 +45,6 @@ b {
     brightness(108%) contrast(106%);
 }
 
-.description {
-  width: 18ch;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 2em;
-}
-
-.description .animated-text {
-  border-right: 3px solid;
-  animation: blink 0.5s step-end infinite alternate;
-}
-
 .current {
   text-decoration: underline;
   text-decoration-thickness: 3px;
@@ -86,8 +74,18 @@ b {
   to {
     border-color: transparent;
   }
-
   50% {
     border-color: #ffffff;
   }
+}
+
+.description {
+  width: 18ch;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.description .animated-text {
+  border-right: 3px solid;
+  animation: blink 0.5s step-end infinite alternate;
 }

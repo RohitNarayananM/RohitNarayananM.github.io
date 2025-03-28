@@ -18,10 +18,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lu513n's Profile</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,120 +30,144 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item current">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog">Blog</a>
-          </li>
-        </ul>
+  <body class="bg-black text-white min-h-screen font-['Proza_Libre']">
+    <nav class="bg-black border-b border-gray-800 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <button class="md:hidden text-white" id="mobile-menu-button">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden md:flex space-x-12 text-lg" id="navbarNav">
+            <a
+              href="/"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="/gallery"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Gallery</a
+            >
+            <a
+              href="/projects"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Projects</a
+            >
+            <a
+              href="/blog"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Blog</a
+            >
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Resume</a
+            >
+          </div>
+        </div>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="text-center">
+    <div class="container mx-auto px-4 py-12">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-20"
+      >
+        <div class="w-full md:w-1/2">
+          <div class="flex justify-center">
             <img
               src="/public/img2-bw.png"
               alt="Your Photo"
-              class="profile-image img-fluid"
+              class="w-72 h-72 md:w-96 md:h-96 object-cover transition-transform duration-300"
             />
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="row">
-            <h1 class="mt-2 name">
-              Hi, I'm <b>Rohit Narayanan M</b> aka
-              <b><a href="https://twitter.com/Lu513n/">Lu513n</a></b>
+        <div class="w-full md:w-1/2">
+          <div class="text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold mt-4 leading-tight">
+              Hi, I'm <b class="text-[#ff5a5a]">Rohit Narayanan M</b> aka
+              <b
+                ><a
+                  href="https://twitter.com/Lu513n/"
+                  class="text-white hover:text-gray-300 transition-colors duration-200"
+                  >Lu513n</a
+                ></b
+              >
             </h1>
-            <p class="mt-2 description">
-              I'm a <span class="animated-text"></span>
+            <p class="mt-6 text-2xl md:text-3xl">
+              I'm a <span class="description animated-text"></span>
             </p>
-            <p class="mt-2"></p>
           </div>
-          <div class="row mt-4">
-            <div class="col">
-              <a
-                href="https://www.linkedin.com/in/rohitnarayananm/"
-                target="_blank"
-              >
-                <img
-                  src="/public/logo/linkedin.png"
-                  alt="LinkedIn"
-                  class="social-icon img-fluid"
-                  style="max-width: 50px"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a href="https://github.com/RohitNarayananM/" target="_blank">
-                <img
-                  src="/public/logo/github.png"
-                  alt="Github"
-                  class="social-icon img-fluid"
-                  style="max-width: 50px"
-                />
-              </a>
-            </div>
-            <!--Discord-->
-            <div class="col">
-              <a href="https://discord.com/users/7071/" target="_blank">
-                <img
-                  src="/public/logo/discord.png"
-                  alt="Discord"
-                  class="social-icon img-fluid"
-                  style="max-width: 50px"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a href="https://x.com/Lu513n/" target="_blank">
-                <img
-                  src="/public/logo/x.png"
-                  alt="Telegram"
-                  class="social-icon img-fluid"
-                  style="max-width: 50px"
-                />
-              </a>
-            </div>
-            <div class="col">
-              <a
-                href="https://www.instagram.com/rohit._.narayanan/"
-                target="_blank"
-              >
-                <img
-                  src="/public/logo/ig.png"
-                  alt="Instagram"
-                  class="social-icon img-fluid"
-                  style="max-width: 50px"
-                />
-              </a>
-            </div>
+          <div class="flex justify-center md:justify-start space-x-12 mt-12">
+            <a
+              href="https://www.linkedin.com/in/rohitnarayananm/"
+              target="_blank"
+              class="transform hover:scale-110 transition-transform duration-200"
+            >
+              <img
+                src="/public/logo/linkedin.png"
+                alt="LinkedIn"
+                class="h-16 brightness-108 contrast-106"
+              />
+            </a>
+            <a
+              href="https://github.com/RohitNarayananM/"
+              target="_blank"
+              class="transform hover:scale-110 transition-transform duration-200"
+            >
+              <img
+                src="/public/logo/github.png"
+                alt="Github"
+                class="h-16 brightness-108 contrast-106"
+              />
+            </a>
+            <a
+              href="https://discord.com/users/7071/"
+              target="_blank"
+              class="transform hover:scale-110 transition-transform duration-200"
+            >
+              <img
+                src="/public/logo/discord.png"
+                alt="Discord"
+                class="h-16 brightness-108 contrast-106"
+              />
+            </a>
+            <a
+              href="https://x.com/Lu513n/"
+              target="_blank"
+              class="transform hover:scale-110 transition-transform duration-200"
+            >
+              <img
+                src="/public/logo/x.png"
+                alt="X"
+                class="h-16 brightness-108 contrast-106"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/rohit._.narayanan/"
+              target="_blank"
+              class="transform hover:scale-110 transition-transform duration-200"
+            >
+              <img
+                src="/public/logo/ig.png"
+                alt="Instagram"
+                class="h-16 brightness-108 contrast-106"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -156,32 +177,7 @@
       const sleep = (milliseconds) => {
         return new Promise((resolve) => setTimeout(resolve, milliseconds));
       };
-      async function animate_title() {
-        (i = 0), (j = 0), (k = 0);
-        while (true) {
-          var title = "Time Spent: ";
-          if (i == 60) {
-            i = 0;
-            j++;
-          }
-          if (j == 60) {
-            j = 0;
-            k++;
-          }
-          if (k) {
-            title += k + "h ";
-          }
-          if (j) {
-            title += j + "m ";
-          }
-          title += i + "s";
-          document.title = title;
-          i++;
-          await sleep(1000);
-        }
-      }
 
-      //I don't know CSS, so let me do it with JS 😎
       async function type() {
         texts = [
           "Security Researcher",
@@ -205,12 +201,21 @@
         }
       }
 
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const navbarNav = document.getElementById("navbarNav");
+
+      mobileMenuButton.addEventListener("click", () => {
+        navbarNav.classList.toggle("hidden");
+        navbarNav.classList.toggle("flex");
+        navbarNav.classList.toggle("flex-col");
+        navbarNav.classList.toggle("space-y-6");
+        navbarNav.classList.toggle("text-xl");
+      });
+
       window.onload = () => {
-        animate_title();
         type();
       };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
   </body>
 </html>

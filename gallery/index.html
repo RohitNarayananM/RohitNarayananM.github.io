@@ -1,55 +1,115 @@
-<html>
-
-<head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6TEV86QF7"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-L6TEV86QF7"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-L6TEV86QF7');
+      gtag("config", "G-L6TEV86QF7");
     </script>
-    <title>Working On It</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/public/css/style.css">
-</head>
+    <title>Thank you</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item current">
-                    <a class="nav-link" href="/gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
-                </li>
-            </ul>
+  <body class="bg-black text-white min-h-screen">
+    <nav class="bg-black border-b border-gray-800 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <button class="md:hidden text-white" id="mobile-menu-button">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden md:flex space-x-12 text-lg" id="navbarNav">
+            <a
+              href="/"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="/gallery"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Gallery</a
+            >
+            <a
+              href="/projects"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Projects</a
+            >
+            <a
+              href="/blog"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Blog</a
+            >
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+              >Resume</a
+            >
+          </div>
         </div>
+      </div>
     </nav>
-    <div class="container-fluid">
-        <iframe width="100%" height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&muted=1&background=1" title="Rick Roll"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-</body>
 
+    <div class="w-full h-screen">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&muted=1&background=1"
+        title="Rick Roll"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const navbarNav = document.getElementById("navbarNav");
+
+      mobileMenuButton.addEventListener("click", () => {
+        navbarNav.classList.toggle("hidden");
+        navbarNav.classList.toggle("flex");
+        navbarNav.classList.toggle("flex-col");
+        navbarNav.classList.toggle("space-y-6");
+        navbarNav.classList.toggle("text-xl");
+      });
+
+      // Scroll to iframe as soon as DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+        const iframe = document.querySelector("iframe");
+        iframe.scrollIntoView({ behavior: "instant" });
+      });
+    </script>
+  </body>
 </html>
